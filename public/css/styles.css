@@ -1,8 +1,28 @@
-.input-fields {
-    /* border: 1px solid red; */
+body {
+    background-color: #DEF3FA;
+    color: #195177;
 }
-.input-fields label {
-    /* border: 1px solid green; */
-    /* position: absolute; */
-    /* float: right; */
+
+/* FORM */
+form {
+    margin-top: 60px;
+}
+form .label-styles {
+    font-weight: bold;
+}
+form .form-styles {
+    border: 1px solid #7FDAE6;
+    border-radius: 0;
+}
+.required-asterisk:after {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    content: '*';
+    color: red;
+} 
+form .button-styles {
+    background-color: #F15926;
+    color: white;
+    width: 25%;
 }

@@ -74,78 +74,76 @@ class __TwigTemplate_e374aaf7778b332826f11e7d0f084e6eb1503d379eb1d088c0228318c0a
 
         <div class=\"row\">
             <div class=\"col-md-12\">
-
-                <form class=\"border\">
-
+                <form>
                     <div class=\"container\">
-                        <div class=\"form-group row justify-content-center border\">
+                        <div class=\"form-group row justify-content-center\">
                             <div class=\"col-md-8 text-center\">
-                                <h2>Employees</h2>
+                                <h3>Employees</h3>
                             </div>
                         </div>
 
-                        <div class=\"form-group row justify-content-center border\">
-                            <div class=\"col-lg-8 input-fields\">
+                        <div class=\"form-group row justify-content-center\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputFirstName\" class=\"col-form-label float-lg-right\">First name:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputFirstName\" class=\"col-form-label float-lg-right label-styles\">First name:</label>
                                         </div>
-                                        <div class=\"col-lg-9\">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputFirstName\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputFirstName\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputLastName\" class=\"col-form-label float-lg-right\">Last name:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputLastName\" class=\"col-form-label float-lg-right label-styles\">Last name:</label>
                                         </div>
-                                        <div class=\"col-lg-9\">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputLastName\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputLastName\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputDOB\" class=\"col-form-label float-lg-right\">Date of birth:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputDOB\" class=\"col-form-label float-lg-right label-styles\">Date of birth:</label>
                                         </div>
-                                        <div class=\"col-lg-9 \">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputDOB\" placeholder=\"DD/MM/YY\">
+                                        <div class=\"col-lg-5 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputDOB\" placeholder=\"DD/MM/YY\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputEmail\" class=\"col-form-label float-lg-right\">Email address:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputEmail\" class=\"col-form-label float-lg-right label-styles\">Email address:</label>
                                         </div>
-                                        <div class=\"col-lg-9 \">
-                                            <input type=\"email\" class=\"form-control\" id=\"inputEmail\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"email\" class=\"form-control form-styles\" id=\"inputEmail\">
                                          </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
                                         <div class=\"col-lg-9 offset-lg-3\">
-                                            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>
+                                            <button type=\"submit\" class=\"btn button-styles\">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +151,6 @@ class __TwigTemplate_e374aaf7778b332826f11e7d0f084e6eb1503d379eb1d088c0228318c0a
                         </div>
                     </div>
                 </form>
-
             </div>
         </div>
         
@@ -190,78 +187,76 @@ class __TwigTemplate_e374aaf7778b332826f11e7d0f084e6eb1503d379eb1d088c0228318c0a
 
         <div class=\"row\">
             <div class=\"col-md-12\">
-
-                <form class=\"border\">
-
+                <form>
                     <div class=\"container\">
-                        <div class=\"form-group row justify-content-center border\">
+                        <div class=\"form-group row justify-content-center\">
                             <div class=\"col-md-8 text-center\">
-                                <h2>Employees</h2>
+                                <h3>Employees</h3>
                             </div>
                         </div>
 
-                        <div class=\"form-group row justify-content-center border\">
-                            <div class=\"col-lg-8 input-fields\">
+                        <div class=\"form-group row justify-content-center\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputFirstName\" class=\"col-form-label float-lg-right\">First name:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputFirstName\" class=\"col-form-label float-lg-right label-styles\">First name:</label>
                                         </div>
-                                        <div class=\"col-lg-9\">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputFirstName\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputFirstName\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputLastName\" class=\"col-form-label float-lg-right\">Last name:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputLastName\" class=\"col-form-label float-lg-right label-styles\">Last name:</label>
                                         </div>
-                                        <div class=\"col-lg-9\">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputLastName\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputLastName\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputDOB\" class=\"col-form-label float-lg-right\">Date of birth:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputDOB\" class=\"col-form-label float-lg-right label-styles\">Date of birth:</label>
                                         </div>
-                                        <div class=\"col-lg-9 \">
-                                            <input type=\"text\" class=\"form-control\" id=\"inputDOB\" placeholder=\"DD/MM/YY\">
+                                        <div class=\"col-lg-5 required-asterisk\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputDOB\" placeholder=\"DD/MM/YY\">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
-                                        <div class=\"col-lg-3\">
-                                            <label for=\"inputEmail\" class=\"col-form-label float-lg-right\">Email address:</label>
+                                        <div class=\"col-lg-3 pr-lg-0\">
+                                            <label for=\"inputEmail\" class=\"col-form-label float-lg-right label-styles\">Email address:</label>
                                         </div>
-                                        <div class=\"col-lg-9 \">
-                                            <input type=\"email\" class=\"form-control\" id=\"inputEmail\">
+                                        <div class=\"col-lg-9 required-asterisk\">
+                                            <input type=\"email\" class=\"form-control form-styles\" id=\"inputEmail\">
                                          </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-group row justify-content-center\">
-                            <div class=\"col-lg-8 input-fields\">
+                            <div class=\"col-lg-7\">
                                 <div class=\"container\">
                                     <div class=\"row\">
                                         <div class=\"col-lg-9 offset-lg-3\">
-                                            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>
+                                            <button type=\"submit\" class=\"btn button-styles\">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +264,6 @@ class __TwigTemplate_e374aaf7778b332826f11e7d0f084e6eb1503d379eb1d088c0228318c0a
                         </div>
                     </div>
                 </form>
-
             </div>
         </div>
         
