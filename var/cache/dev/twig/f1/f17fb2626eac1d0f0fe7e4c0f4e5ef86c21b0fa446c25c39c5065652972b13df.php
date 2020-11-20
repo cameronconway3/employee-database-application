@@ -58,15 +58,19 @@ class __TwigTemplate_8b583fddabd536ac19275dd8f4d07ebe66b0ff3bace37291722ae9674e5
     <body>
         ";
         // line 12
-        $this->displayBlock('body', $context, $blocks);
+        echo twig_include($this->env, $context, "inc/navbar.html.twig");
+        echo "
+        ";
         // line 13
+        $this->displayBlock('body', $context, $blocks);
+        // line 14
         echo "        <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
         ";
-        // line 16
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 17
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 18
         echo "    </body>
 </html>
 ";
@@ -103,7 +107,7 @@ class __TwigTemplate_8b583fddabd536ac19275dd8f4d07ebe66b0ff3bace37291722ae9674e5
 
     }
 
-    // line 12
+    // line 13
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -115,7 +119,7 @@ class __TwigTemplate_8b583fddabd536ac19275dd8f4d07ebe66b0ff3bace37291722ae9674e5
 
     }
 
-    // line 16
+    // line 17
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,9 +136,14 @@ class __TwigTemplate_8b583fddabd536ac19275dd8f4d07ebe66b0ff3bace37291722ae9674e5
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  119 => 16,  107 => 12,  99 => 8,  92 => 7,  79 => 5,  70 => 17,  68 => 16,  63 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
+        return array (  123 => 17,  111 => 13,  103 => 8,  96 => 7,  83 => 5,  74 => 18,  72 => 17,  67 => 14,  65 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -150,6 +159,7 @@ class __TwigTemplate_8b583fddabd536ac19275dd8f4d07ebe66b0ff3bace37291722ae9674e5
         {% endblock %}
     </head>
     <body>
+        {{ include('inc/navbar.html.twig') }}
         {% block body %}{% endblock %}
         <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>

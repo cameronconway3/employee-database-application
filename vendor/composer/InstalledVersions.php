@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'f0f066e1cb3553a470194dde83e2b9d08b3df9e1',
+    'reference' => '2bef5347d0bccc72b1db45b49c43fb376ac42b31',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'f0f066e1cb3553a470194dde83e2b9d08b3df9e1',
+      'reference' => '2bef5347d0bccc72b1db45b49c43fb376ac42b31',
+    ),
+    'composer/package-versions-deprecated' => 
+    array (
+      'pretty_version' => '1.11.99.1',
+      'version' => '1.11.99.1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7413f0b55a051e89485c5cb9f765fe24bb02a7b6',
     ),
     'doctrine/annotations' => 
     array (
@@ -42,6 +51,87 @@ private static $installed = array (
       ),
       'reference' => 'ce77a7ba1770462cd705a91a151b6c3746f9c6ad',
     ),
+    'doctrine/cache' => 
+    array (
+      'pretty_version' => '1.10.2',
+      'version' => '1.10.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '13e3381b25847283a91948d04640543941309727',
+    ),
+    'doctrine/collections' => 
+    array (
+      'pretty_version' => '1.6.7',
+      'version' => '1.6.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '55f8b799269a1a472457bd1a41b4f379d4cfba4a',
+    ),
+    'doctrine/common' => 
+    array (
+      'pretty_version' => '3.0.2',
+      'version' => '3.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a3c6479858989e242a2465972b4f7a8642baf0d4',
+    ),
+    'doctrine/dbal' => 
+    array (
+      'pretty_version' => '2.12.1',
+      'version' => '2.12.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'adce7a954a1c2f14f85e94aed90c8489af204086',
+    ),
+    'doctrine/doctrine-bundle' => 
+    array (
+      'pretty_version' => '2.2.1',
+      'version' => '2.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9e07bb1ff35d35d9ec4597b79e5d05502d7d4d43',
+    ),
+    'doctrine/doctrine-migrations-bundle' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '96e730b0ffa0bb39c0f913c1966213f1674bf249',
+    ),
+    'doctrine/event-manager' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '41370af6a30faa9dc0368c4a6814d596e81aba7f',
+    ),
+    'doctrine/inflector' => 
+    array (
+      'pretty_version' => '1.4.3',
+      'version' => '1.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4650c8b30c753a76bf44fb2ed00117d6f367490c',
+    ),
+    'doctrine/instantiator' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
+    ),
     'doctrine/lexer' => 
     array (
       'pretty_version' => '1.2.1',
@@ -50,6 +140,67 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
+    ),
+    'doctrine/migrations' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '69eaf2ca5bc48357b43ddbdc31ccdffc0e2a0882',
+    ),
+    'doctrine/orm' => 
+    array (
+      'pretty_version' => '2.7.4',
+      'version' => '2.7.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7d84a4998091ece4d645253ac65de9f879eeed2f',
+    ),
+    'doctrine/persistence' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9899c16934053880876b920a3b8b02ed2337ac1d',
+    ),
+    'doctrine/sql-formatter' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '56070bebac6e77230ed7d306ad13528e60732871',
+    ),
+    'nikic/php-parser' => 
+    array (
+      'pretty_version' => 'v4.10.2',
+      'version' => '4.10.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '658f1be311a230e0907f5dfe0213742aff0596de',
+    ),
+    'ocramius/package-versions' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '1.11.99',
+      ),
+    ),
+    'ocramius/proxy-manager' => 
+    array (
+      'pretty_version' => '2.2.3',
+      'version' => '2.2.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4d154742e31c35137d5374c998e8f86b54db2e2f',
     ),
     'paragonie/random_compat' => 
     array (
@@ -199,6 +350,15 @@ private static $installed = array (
       ),
       'reference' => '5fa56b4074d1ae755beb55617ddafe6f5d78f665',
     ),
+    'symfony/doctrine-bridge' => 
+    array (
+      'pretty_version' => 'v5.1.8',
+      'version' => '5.1.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd01f0ec8b1225bd955d079f007c25191d93867d0',
+    ),
     'symfony/dotenv' => 
     array (
       'pretty_version' => 'v5.1.8',
@@ -304,6 +464,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'a13b3c4d994a4fd051f4c6800c5e33c9508091dd',
+    ),
+    'symfony/maker-bundle' => 
+    array (
+      'pretty_version' => 'v1.23.0',
+      'version' => '1.23.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ffaee624a20a462ec2da82942d3c9d8fc8dd1421',
     ),
     'symfony/polyfill-ctype' => 
     array (
@@ -417,6 +586,15 @@ private static $installed = array (
         0 => '1.0',
       ),
     ),
+    'symfony/stopwatch' => 
+    array (
+      'pretty_version' => 'v5.1.8',
+      'version' => '5.1.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3d9f57c89011f0266e6b1d469e5c0110513859d5',
+    ),
     'symfony/string' => 
     array (
       'pretty_version' => 'v5.1.8',
@@ -497,6 +675,24 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b02fa41f3783a2616eccef7b92fbc2343ffed737',
+    ),
+    'zendframework/zend-code' => 
+    array (
+      'pretty_version' => '3.4.1',
+      'version' => '3.4.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '268040548f92c2bfcba164421c1add2ba43abaaa',
+    ),
+    'zendframework/zend-eventmanager' => 
+    array (
+      'pretty_version' => '3.2.1',
+      'version' => '3.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a5e2583a211f73604691586b8406ff7296a946dd',
     ),
   ),
 );

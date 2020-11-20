@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Employee Table{% endblock %}
+
+{% block body %}
+
+    {% if employees is defined %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-styles">
+                        <thead>
+                            <tr>
+                                <th class="thead-styles">First name:</th>
+                                <th class="thead-styles">Last name:</th>
+                                <th class="thead-styles">Date of birth:</th>
+                                <th class="thead-styles">Email address:</th>
+                            </tr>
+                        <thead>
+                        <tbody>
+                            {% for employee in employees %}
+                                <tr>
+                                    <td>{{ employee }}</td>
+                                    <td>{{ employee }}</td>
+                                    <td>{{ employee }}</td>
+                                    <td>{{ employee }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="no-employees-container">
+                        <h1 class="p-3">No Employees Found</h1>
+                        <a href="#"><button class="btn button-styles">ADD EMPLOYEE</button></a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
+

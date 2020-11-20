@@ -19,7 +19,7 @@ class EmployeeController extends AbstractController {
     public function index() {
         // return new Response('<h1>Form</h1>');
 
-        return $this->render('employees/form.html.twig');
+        return $this->render('employees/employeeTable.html.twig');
     }
 
     /**
@@ -27,7 +27,7 @@ class EmployeeController extends AbstractController {
      */
     // Get all employees
     // public function employees() {
-    //     return new Response("<h1>Employees</h1>");
+    //     return $this->render('employees/form.html.twig');
     // }
 
 }
