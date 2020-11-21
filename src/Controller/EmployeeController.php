@@ -41,7 +41,7 @@ class EmployeeController extends AbstractController {
         // During a get request this is all ignored
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $employee = $form->getData();
+            $data = $form->getData();
 
             // $employee = new Employee();
             // $employee->setFirstName($data['first_name']);
@@ -57,6 +57,8 @@ class EmployeeController extends AbstractController {
             $this->addFlash('success', 'Employee added!');
 
             return $this->redirectToRoute('employees_table');
+        } else {
+            $this->addFlash('fail', 'Could not add employee');
         }
 
         return $this->render('employees/form.html.twig', [
