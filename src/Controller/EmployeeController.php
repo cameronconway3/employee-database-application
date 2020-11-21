@@ -41,7 +41,7 @@ class EmployeeController extends AbstractController {
         // During a get request this is all ignored
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $data = $form->getData();
+            $employee = $form->getData();
 
             // $employee = new Employee();
             // $employee->setFirstName($data['first_name']);
@@ -55,10 +55,7 @@ class EmployeeController extends AbstractController {
 
             // Flash messages only live in the sesssion until they are read for the first time
             $this->addFlash('success', 'Employee added!');
-
             return $this->redirectToRoute('employees_table');
-        } else {
-            $this->addFlash('fail', 'Could not add employee');
         }
 
         return $this->render('employees/form.html.twig', [

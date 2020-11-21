@@ -1,6 +1,6 @@
 # Employee Database Application
  Employee database application using Symfony.
 
-Templating Engine - Twig (I have used this technology with Craft CMS)
+<img src='public/images/project_screenshot_1.png' alt='Project Screenshot 1'>
+<img src='public/images/project_screenshot_2.png' alt='Project Screenshot 2'>
 
-Libraries - Bootstrap
