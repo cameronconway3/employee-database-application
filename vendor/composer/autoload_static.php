@@ -387,6 +387,7 @@ class ComposerStaticInitd0ca824749a239ae3b3a8e94b002262f
     public static $classMap = array (
         'App\\Controller\\EmployeeController' => __DIR__ . '/../..' . '/src/Controller/EmployeeController.php',
         'App\\Entity\\Employee' => __DIR__ . '/../..' . '/src/Entity/Employee.php',
+        'App\\Form\\EmployeeFormType' => __DIR__ . '/../..' . '/src/Form/EmployeeFormType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Repository\\EmployeeRepository' => __DIR__ . '/../..' . '/src/Repository/EmployeeRepository.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

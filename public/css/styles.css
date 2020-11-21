@@ -17,6 +17,9 @@ nav {
     display: inline-block;
     float:none;
 }
+.nav-link-styles:hover {
+    opacity: 0.7;
+}
 .nav-link-styles h5 {
     margin-bottom: 0;
     color: #55A4CB;

@@ -1,13 +1,12 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Employee Form{% endblock %}
+{% block title %}Employee Table{% endblock %}
 
 {% block body %}
     <div class="container">
-
         <div class="row">
             <div class="col-md-12">
-                <form method="POST">
+                {{ form_start(employeeForm) }}
                     <div class="container">
                         <div class="form-group row justify-content-center">
                             <div class="col-md-8 text-center">
@@ -23,13 +22,14 @@
                                             <label for="inputFirstName" class="col-form-label float-lg-right label-styles">First name:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputFirstName" name="first_name">
+                                            {{form_widget(employeeForm.first_name, {'id': 'inputFirstName'})}}
                                             <div class="first-name-error"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-group row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="container">
@@ -38,13 +38,14 @@
                                             <label for="inputLastName" class="col-form-label float-lg-right label-styles">Last name:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputLastName" name="last_name">
+                                            {{form_widget(employeeForm.last_name, {'id': 'inputLastName'})}}
                                             <div class="last-name-error"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-group row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="container">
@@ -53,13 +54,14 @@
                                             <label for="inputDOB" class="col-form-label float-lg-right label-styles">Date of birth:</label>
                                         </div>
                                         <div class="col-lg-5 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputDOB" name="dob" placeholder="DD/MM/YY">
+                                            {{form_widget(employeeForm.dob, {'id': 'inputDOB'})}}
                                             <div class="dob-error"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-group row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="container">
@@ -68,13 +70,14 @@
                                             <label for="inputEmail" class="col-form-label float-lg-right label-styles">Email address:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputEmail" name="email_address">
+                                            {{form_widget(employeeForm.email_address, {'id': 'inputEmail'})}}
                                             <div class="email-address-error"></div>
                                          </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="form-group row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="container">
@@ -87,9 +90,8 @@
                             </div>
                         </div>
                     </div>
-                </form>
+                {{ form_end(employeeForm) }}
             </div>
-        </div>
-        
-    </div>
+        </div>  
+    </div>       
 {% endblock %}

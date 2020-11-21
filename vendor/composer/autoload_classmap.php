@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controller\\EmployeeController' => $baseDir . '/src/Controller/EmployeeController.php',
     'App\\Entity\\Employee' => $baseDir . '/src/Entity/Employee.php',
+    'App\\Form\\EmployeeFormType' => $baseDir . '/src/Form/EmployeeFormType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'App\\Repository\\EmployeeRepository' => $baseDir . '/src/Repository/EmployeeRepository.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

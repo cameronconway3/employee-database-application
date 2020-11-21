@@ -9,10 +9,7 @@ return [
     false, // $matchHost
     [ // $staticRoutes
         '/' => [[['_route' => 'employees_table', '_controller' => 'App\\Controller\\EmployeeController::index'], null, ['GET' => 0], null, false, false, null]],
-        '/new' => [
-            [['_route' => 'employee_form', '_controller' => 'App\\Controller\\EmployeeController::getFormAction'], null, ['GET' => 0], null, false, false, null],
-            [['_route' => 'new_employee', '_controller' => 'App\\Controller\\EmployeeController::saveFormAction'], null, ['POST' => 0], null, false, false, null],
-        ],
+        '/new' => [[['_route' => 'new_employee', '_controller' => 'App\\Controller\\EmployeeController::new'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

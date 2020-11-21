@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Employee;
+use App\Form\EmployeeFormType;
+use Doctrine\ORM\EntityManagerInterface;
 
 // Request and Response 
 use Symfony\Component\HttpFoundation\Response;
@@ -14,10 +16,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 // Allows us to render twig templates
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
-
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class EmployeeController extends AbstractController {
     /**
@@ -32,48 +30,38 @@ class EmployeeController extends AbstractController {
     }
 
     /**
-     * @Route("/new", name="employee_form", methods={"GET"})
+     * @Route("/new", name="new_employee")
      */
-    // Display add new employee form
-    public function getFormAction() {
+    // Building form correct way, dealing with get and post
+    public function new(EntityManagerInterface $em, Request $request) {
 
-        return $this->render('employees/form.html.twig');
-    }
+        $form = $this->createForm(EmployeeFormType::class);
 
-    /**
-     * @Route("/new", name="new_employee", methods={"POST"})
-     */
-    // When form submitted update the database
-    public function saveFormAction(Request $request) {
+        // handleRequest() only handles data when it is a POST request
+        // During a get request this is all ignored
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $employee = $form->getData();
 
-        // POST Data
-        $first_name = $request->request->get('first_name');
-        $last_name = $request->request->get('last_name');
-        $dob = $request->request->get('dob');
-        $email_address = $request->request->get('email_address');
+            // $employee = new Employee();
+            // $employee->setFirstName($data['first_name']);
+            // $employee->setLastName($data['last_name']);
+            // $employee->setDOB($data['dob']);
+            // $employee->setEmailAddress($data['email_address']);
 
-        // $form = $this->createFormBuilder($employee)
-        //     ->add('first_name', TextType::class, array('attr' => array('class' => 'form-control')))
-        //     ->add('last_name', TextType::class, array('attr' => array('class' => 'form-control')))
-        //     ->add('dob', TextType::class, array('attr' => array('class' => 'form-control')))
-        //     ->add('email_address', TextType::class, array('attr' => array('class' => 'form-control')))
-        //     ->add('submit', SubmitType::class, array('attr' => array('name' => 'submit')))
+            // Persist tells us that we want to eventually save the data, save it with flush
+            $em->persist($employee);
+            $em->flush();
 
-        $entityManager = $this->getDoctrine()->getManager();
+            // Flash messages only live in the sesssion until they are read for the first time
+            $this->addFlash('success', 'Employee added!');
 
-        $employee = new Employee();
-        $employee->setFirstName($first_name);
-        $employee->setLastName($last_name);
-        $employee->setDOB($dob);
-        $employee->setEmailAddress($email_address);
+            return $this->redirectToRoute('employees_table');
+        }
 
-        // Persist tells us that we want to eventually save the data
-        $entityManager->persist($employee);
-
-        $entityManager->flush();
-
-        // return new Response('Saved article with id: ' . $employee->getId());
-        return $this->redirectToRoute('employees_table');
+        return $this->render('employees/form.html.twig', [
+            'employeeForm' => $form->createView(),
+        ]);
     }
 
 }

@@ -70,11 +70,9 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "
-    ";
-        // line 7
+        echo "    ";
         if (array_key_exists("employees", $context)) {
-            // line 8
+            // line 7
             echo "        <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-12\">
@@ -89,27 +87,27 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
                         <thead>
                         <tbody>
                             ";
-            // line 21
+            // line 20
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["employees"]) || array_key_exists("employees", $context) ? $context["employees"] : (function () { throw new RuntimeError('Variable "employees" does not exist.', 21, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["employees"]) || array_key_exists("employees", $context) ? $context["employees"] : (function () { throw new RuntimeError('Variable "employees" does not exist.', 20, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["employee"]) {
-                // line 22
+                // line 21
                 echo "                                <tr class=\"tbody-row\">
                                     <td>";
+                // line 22
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getFirstName", [], "any", false, false, false, 22), "html", null, true);
+                echo "</td>
+                                    <td>";
                 // line 23
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getFirstName", [], "any", false, false, false, 23), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getLastName", [], "any", false, false, false, 23), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 24
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getLastName", [], "any", false, false, false, 24), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getDOB", [], "any", false, false, false, 24), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 25
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getDOB", [], "any", false, false, false, 25), "html", null, true);
-                echo "</td>
-                                    <td>";
-                // line 26
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getEmailAddress", [], "any", false, false, false, 26), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getEmailAddress", [], "any", false, false, false, 25), "html", null, true);
                 echo "</td>
                                 </tr>
                             ";
@@ -117,7 +115,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['employee'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 29
+            // line 28
             echo "                        </tbody>
                     </table>
                 </div>
@@ -125,7 +123,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
         </div>
     ";
         } else {
-            // line 35
+            // line 34
             echo "        <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-12\">
@@ -138,7 +136,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
         </div>
     ";
         }
-        // line 46
+        // line 45
         echo "
 ";
         
@@ -158,7 +156,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
 
     public function getDebugInfo()
     {
-        return array (  142 => 46,  129 => 35,  121 => 29,  112 => 26,  108 => 25,  104 => 24,  100 => 23,  97 => 22,  93 => 21,  78 => 8,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  140 => 45,  127 => 34,  119 => 28,  110 => 25,  106 => 24,  102 => 23,  98 => 22,  95 => 21,  91 => 20,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -168,7 +166,6 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
 {% block title %}Employee Table{% endblock %}
 
 {% block body %}
-
     {% if employees is defined %}
         <div class=\"container\">
             <div class=\"row\">
@@ -209,8 +206,6 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
         </div>
     {% endif %}
 
-{% endblock %}
-
-", "employees/employeeTable.html.twig", "/Users/cameronconway/Documents/GitHub/employee-database-application/templates/employees/employeeTable.html.twig");
+{% endblock %}", "employees/employeeTable.html.twig", "/Users/cameronconway/Documents/GitHub/employee-database-application/templates/employees/employeeTable.html.twig");
     }
 }
