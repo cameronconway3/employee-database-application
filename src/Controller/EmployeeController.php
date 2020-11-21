@@ -32,7 +32,7 @@ class EmployeeController extends AbstractController {
     }
 
     /**
-     * @Route("/employees", name="employee_form", methods={"GET"})
+     * @Route("/new", name="employee_form", methods={"GET"})
      */
     // Display add new employee form
     public function getFormAction() {
@@ -41,7 +41,7 @@ class EmployeeController extends AbstractController {
     }
 
     /**
-     * @Route("/employees", name="new_employee", methods={"POST"})
+     * @Route("/new", name="new_employee", methods={"POST"})
      */
     // When form submitted update the database
     public function saveFormAction(Request $request) {

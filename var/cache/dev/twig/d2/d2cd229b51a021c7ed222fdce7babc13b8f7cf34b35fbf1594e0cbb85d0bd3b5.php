@@ -91,6 +91,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputFirstName\" name=\"first_name\">
+                                            <div class=\"first-name-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -105,6 +106,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputLastName\" name=\"last_name\">
+                                            <div class=\"last-name-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -119,6 +121,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-5 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputDOB\" name=\"dob\" placeholder=\"DD/MM/YY\">
+                                            <div class=\"dob-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -132,7 +135,8 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                             <label for=\"inputEmail\" class=\"col-form-label float-lg-right label-styles\">Email address:</label>
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
-                                            <input type=\"email\" class=\"form-control form-styles\" id=\"inputEmail\" name=\"email_address\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputEmail\" name=\"email_address\">
+                                            <div class=\"email-address-error\"></div>
                                          </div>
                                     </div>
                                 </div>
@@ -143,7 +147,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                 <div class=\"container\">
                                     <div class=\"row\">
                                         <div class=\"col-lg-9 offset-lg-3\">
-                                            <button type=\"submit\" class=\"btn button-styles\" name=\"submit\">SUBMIT</button>
+                                            <button type=\"submit\" class=\"btn button-styles\" id=\"submitEmployee\" name=\"submit\">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>
@@ -204,6 +208,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputFirstName\" name=\"first_name\">
+                                            <div class=\"first-name-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -218,6 +223,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputLastName\" name=\"last_name\">
+                                            <div class=\"last-name-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -232,6 +238,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                         </div>
                                         <div class=\"col-lg-5 required-asterisk\">
                                             <input type=\"text\" class=\"form-control form-styles\" id=\"inputDOB\" name=\"dob\" placeholder=\"DD/MM/YY\">
+                                            <div class=\"dob-error\"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +252,8 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                             <label for=\"inputEmail\" class=\"col-form-label float-lg-right label-styles\">Email address:</label>
                                         </div>
                                         <div class=\"col-lg-9 required-asterisk\">
-                                            <input type=\"email\" class=\"form-control form-styles\" id=\"inputEmail\" name=\"email_address\">
+                                            <input type=\"text\" class=\"form-control form-styles\" id=\"inputEmail\" name=\"email_address\">
+                                            <div class=\"email-address-error\"></div>
                                          </div>
                                     </div>
                                 </div>
@@ -256,7 +264,7 @@ class __TwigTemplate_505edb47857cfccecf2b91ba00ee218e634e67a7cdcfd5bc31a1ac068a6
                                 <div class=\"container\">
                                     <div class=\"row\">
                                         <div class=\"col-lg-9 offset-lg-3\">
-                                            <button type=\"submit\" class=\"btn button-styles\" name=\"submit\">SUBMIT</button>
+                                            <button type=\"submit\" class=\"btn button-styles\" id=\"submitEmployee\" name=\"submit\">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>

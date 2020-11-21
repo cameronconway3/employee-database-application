@@ -67,10 +67,11 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
         echo "        <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
+        <script src=\"/js/scripts.js\"></script>
         ";
-        // line 17
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 18
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 19
         echo "    </body>
 </html>
 ";
@@ -119,7 +120,7 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
 
     }
 
-    // line 17
+    // line 18
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -143,7 +144,7 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
 
     public function getDebugInfo()
     {
-        return array (  123 => 17,  111 => 13,  103 => 8,  96 => 7,  83 => 5,  74 => 18,  72 => 17,  67 => 14,  65 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
+        return array (  124 => 18,  112 => 13,  104 => 8,  97 => 7,  84 => 5,  75 => 19,  73 => 18,  67 => 14,  65 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -164,6 +165,7 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
         <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
+        <script src=\"/js/scripts.js\"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -5,8 +5,7 @@ body {
 
 /* NAVBAR */
 nav {
-    border-bottom: 1px solid #195177;
-    background-color: #DEF3FA;
+    background-color: #195177;
 }
 .navbar-nav {
     float:none;
@@ -17,6 +16,10 @@ nav {
 .navbar-nav > li {
     display: inline-block;
     float:none;
+}
+.nav-link-styles h5 {
+    margin-bottom: 0;
+    color: #55A4CB;
 }
 
 /* FORM */
@@ -41,6 +44,9 @@ form .button-styles {
     background-color: #F15926;
     color: white;
     width: 25%;
+}
+.validation-message {
+    margin-bottom: 0px;
 }
 
 /* TABLE */

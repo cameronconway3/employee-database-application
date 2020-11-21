@@ -39,11 +39,11 @@ class __TwigTemplate_5e47e06764e26878efd6d968c9732ccdccda611c2823f394ff47ac0b943
         // line 1
         echo "<nav class=\"navbar navbar-expand-lg navbar-light\">
     <ul class=\"navbar-nav mr-auto\">
-        <li class=\"nav-item active pl-4 pr-4\">
-            <a class=\"nav-link\" href=\"#\"><h5>Employees</h5><span class=\"sr-only\">(current)</span></a>
+        <li class=\"nav-item pl-4 pr-4\">
+            <a class=\"nav-link nav-link-styles\" href=\"/\"><h5>Employees</h5></a>
         </li>
         <li class=\"nav-item pl-4 pr-4\">
-            <a class=\"nav-link\" href=\"#\"><h5>Add Employee</h5></a>
+            <a class=\"nav-link nav-link-styles\" href=\"/new\"><h5>Add Employee</h5></a>
         </li>
     </ul>
 </nav>";
@@ -66,11 +66,11 @@ class __TwigTemplate_5e47e06764e26878efd6d968c9732ccdccda611c2823f394ff47ac0b943
     {
         return new Source("<nav class=\"navbar navbar-expand-lg navbar-light\">
     <ul class=\"navbar-nav mr-auto\">
-        <li class=\"nav-item active pl-4 pr-4\">
-            <a class=\"nav-link\" href=\"#\"><h5>Employees</h5><span class=\"sr-only\">(current)</span></a>
+        <li class=\"nav-item pl-4 pr-4\">
+            <a class=\"nav-link nav-link-styles\" href=\"/\"><h5>Employees</h5></a>
         </li>
         <li class=\"nav-item pl-4 pr-4\">
-            <a class=\"nav-link\" href=\"#\"><h5>Add Employee</h5></a>
+            <a class=\"nav-link nav-link-styles\" href=\"/new\"><h5>Add Employee</h5></a>
         </li>
     </ul>
 </nav>", "inc/navbar.html.twig", "/Users/cameronconway/Documents/GitHub/employee-database-application/templates/inc/navbar.html.twig");
