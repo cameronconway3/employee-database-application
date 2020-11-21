@@ -37,7 +37,7 @@ class __TwigTemplate_22931fe83047b9f54b0c550881ba80b10a3aad8131c303e3ec36fd421ef
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "inc/navbar.html.twig"));
 
         // line 1
-        echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        echo "<nav class=\"navbar navbar-expand-lg navbar-light\">
     <ul class=\"navbar-nav mr-auto\">
         <li class=\"nav-item active pl-4 pr-4\">
             <a class=\"nav-link\" href=\"#\"><h5>Employees</h5><span class=\"sr-only\">(current)</span></a>
@@ -64,7 +64,7 @@ class __TwigTemplate_22931fe83047b9f54b0c550881ba80b10a3aad8131c303e3ec36fd421ef
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        return new Source("<nav class=\"navbar navbar-expand-lg navbar-light\">
     <ul class=\"navbar-nav mr-auto\">
         <li class=\"nav-item active pl-4 pr-4\">
             <a class=\"nav-link\" href=\"#\"><h5>Employees</h5><span class=\"sr-only\">(current)</span></a>

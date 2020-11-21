@@ -7,7 +7,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <form>
+                <form method="POST">
                     <div class="container">
                         <div class="form-group row justify-content-center">
                             <div class="col-md-8 text-center">
@@ -23,7 +23,7 @@
                                             <label for="inputFirstName" class="col-form-label float-lg-right label-styles">First name:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputFirstName">
+                                            <input type="text" class="form-control form-styles" id="inputFirstName" name="first_name">
                                         </div>
                                     </div>
                                 </div>
@@ -37,7 +37,7 @@
                                             <label for="inputLastName" class="col-form-label float-lg-right label-styles">Last name:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputLastName">
+                                            <input type="text" class="form-control form-styles" id="inputLastName" name="last_name">
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                             <label for="inputDOB" class="col-form-label float-lg-right label-styles">Date of birth:</label>
                                         </div>
                                         <div class="col-lg-5 required-asterisk">
-                                            <input type="text" class="form-control form-styles" id="inputDOB" placeholder="DD/MM/YY">
+                                            <input type="text" class="form-control form-styles" id="inputDOB" name="dob" placeholder="DD/MM/YY">
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                                             <label for="inputEmail" class="col-form-label float-lg-right label-styles">Email address:</label>
                                         </div>
                                         <div class="col-lg-9 required-asterisk">
-                                            <input type="email" class="form-control form-styles" id="inputEmail">
+                                            <input type="email" class="form-control form-styles" id="inputEmail" name="email_address">
                                          </div>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-9 offset-lg-3">
-                                            <button type="submit" class="btn button-styles">SUBMIT</button>
+                                            <button type="submit" class="btn button-styles" name="submit">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>

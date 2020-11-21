@@ -94,22 +94,22 @@ class __TwigTemplate_bebff82d18e9674376a66c6830a8bd039d2f59676860bd5085b44b78417
             $context['_seq'] = twig_ensure_traversable((isset($context["employees"]) || array_key_exists("employees", $context) ? $context["employees"] : (function () { throw new RuntimeError('Variable "employees" does not exist.', 21, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["employee"]) {
                 // line 22
-                echo "                                <tr>
+                echo "                                <tr class=\"tbody-row\">
                                     <td>";
                 // line 23
-                echo twig_escape_filter($this->env, $context["employee"], "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getFirstName", [], "any", false, false, false, 23), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 24
-                echo twig_escape_filter($this->env, $context["employee"], "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getLastName", [], "any", false, false, false, 24), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 25
-                echo twig_escape_filter($this->env, $context["employee"], "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getDOB", [], "any", false, false, false, 25), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 26
-                echo twig_escape_filter($this->env, $context["employee"], "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getEmailAddress", [], "any", false, false, false, 26), "html", null, true);
                 echo "</td>
                                 </tr>
                             ";
@@ -184,11 +184,11 @@ class __TwigTemplate_bebff82d18e9674376a66c6830a8bd039d2f59676860bd5085b44b78417
                         <thead>
                         <tbody>
                             {% for employee in employees %}
-                                <tr>
-                                    <td>{{ employee }}</td>
-                                    <td>{{ employee }}</td>
-                                    <td>{{ employee }}</td>
-                                    <td>{{ employee }}</td>
+                                <tr class=\"tbody-row\">
+                                    <td>{{ employee.getFirstName }}</td>
+                                    <td>{{ employee.getLastName }}</td>
+                                    <td>{{ employee.getDOB }}</td>
+                                    <td>{{ employee.getEmailAddress }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

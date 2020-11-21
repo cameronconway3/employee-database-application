@@ -5,6 +5,10 @@ namespace App\Entity;
 use App\Repository\EmployeeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+// When updating use:
+// php bin/console doctrine:migrations:diff  
+// php bin/console doctrine:migrations:migrate
+
 /**
  * @ORM\Entity(repositoryClass=EmployeeRepository::class)
  */
@@ -18,22 +22,22 @@ class Employee
     private $id;
 
     /**
-     * @ORM\Column(type="varchar", length=120)
+     * @ORM\Column(type="string", length=120)
      */
     private $first_name;
 
     /**
-     * @ORM\Column(type="varchar", length=120)
+     * @ORM\Column(type="string", length=120)
      */
     private $last_name;
 
     /**
-     * @ORM\Column(type="varchar", length=20)
+     * @ORM\Column(type="string", length=10)
      */
     private $dob;
 
     /**
-     * @ORM\Column(type="varchar", length=120)
+     * @ORM\Column(type="string", length=120)
      */
     private $email_address;
 

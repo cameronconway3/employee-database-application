@@ -4,5 +4,7 @@
 
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
-    'app_employee_index' => [[], ['_controller' => 'App\\Controller\\EmployeeController::index'], [], [['text', '/']], [], []],
+    'employees_table' => [[], ['_controller' => 'App\\Controller\\EmployeeController::index'], [], [['text', '/']], [], []],
+    'employee_form' => [[], ['_controller' => 'App\\Controller\\EmployeeController::getFormAction'], [], [['text', '/employees']], [], []],
+    'new_employee' => [[], ['_controller' => 'App\\Controller\\EmployeeController::saveFormAction'], [], [['text', '/employees']], [], []],
 ];
