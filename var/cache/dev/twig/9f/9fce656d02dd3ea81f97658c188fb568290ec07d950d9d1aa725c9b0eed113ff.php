@@ -71,7 +71,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
 
         // line 6
         echo "    ";
-        if (array_key_exists("employees", $context)) {
+        if ((array_key_exists("employees", $context) &&  !twig_test_empty((isset($context["employees"]) || array_key_exists("employees", $context) ? $context["employees"] : (function () { throw new RuntimeError('Variable "employees" does not exist.', 6, $this->source); })())))) {
             // line 7
             echo "        <div class=\"container\">
             <div class=\"row\">
@@ -124,19 +124,21 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
     ";
         } else {
             // line 34
+            echo "        ";
+            // line 35
             echo "        <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-12\">
                     <div class=\"no-employees-container\">
                         <h1 class=\"p-3\">No Employees Found</h1>
-                        <a href=\"#\"><button class=\"btn button-styles\">ADD EMPLOYEE</button></a>  
+                        <a href=\"/new\"><button class=\"btn button-styles\">ADD EMPLOYEE</button></a>  
                     </div>
                 </div>
             </div>
         </div>
     ";
         }
-        // line 45
+        // line 46
         echo "
 ";
         
@@ -156,7 +158,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
 
     public function getDebugInfo()
     {
-        return array (  140 => 45,  127 => 34,  119 => 28,  110 => 25,  106 => 24,  102 => 23,  98 => 22,  95 => 21,  91 => 20,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  142 => 46,  129 => 35,  127 => 34,  119 => 28,  110 => 25,  106 => 24,  102 => 23,  98 => 22,  95 => 21,  91 => 20,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -166,7 +168,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
 {% block title %}Employee Table{% endblock %}
 
 {% block body %}
-    {% if employees is defined %}
+    {% if employees is defined and employees is not empty %}
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-12\">
@@ -194,12 +196,13 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
             </div>
         </div>
     {% else %}
+        {# if there are no employees, then display content below #}
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-12\">
                     <div class=\"no-employees-container\">
                         <h1 class=\"p-3\">No Employees Found</h1>
-                        <a href=\"#\"><button class=\"btn button-styles\">ADD EMPLOYEE</button></a>  
+                        <a href=\"/new\"><button class=\"btn button-styles\">ADD EMPLOYEE</button></a>  
                     </div>
                 </div>
             </div>

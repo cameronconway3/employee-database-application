@@ -3,7 +3,7 @@
 {% block title %}Employee Table{% endblock %}
 
 {% block body %}
-    {% if employees is defined %}
+    {% if employees is defined and employees is not empty %}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -31,12 +31,13 @@
             </div>
         </div>
     {% else %}
+        {# if there are no employees, then display content below #}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="no-employees-container">
                         <h1 class="p-3">No Employees Found</h1>
-                        <a href="#"><button class="btn button-styles">ADD EMPLOYEE</button></a>  
+                        <a href="/new"><button class="btn button-styles">ADD EMPLOYEE</button></a>  
                     </div>
                 </div>
             </div>
