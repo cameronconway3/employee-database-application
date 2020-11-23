@@ -36,18 +36,13 @@ class EmployeeController extends AbstractController {
     public function new(EntityManagerInterface $em, Request $request) {
 
         $form = $this->createForm(EmployeeFormType::class);
-
+        
         // handleRequest() only handles data when it is a POST request
         // During a get request this is all ignored
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            
             $employee = $form->getData();
-
-            // $employee = new Employee();
-            // $employee->setFirstName($data['first_name']);
-            // $employee->setLastName($data['last_name']);
-            // $employee->setDOB($data['dob']);
-            // $employee->setEmailAddress($data['email_address']);
 
             // Persist tells us that we want to eventually save the data, save it with flush
             $em->persist($employee);

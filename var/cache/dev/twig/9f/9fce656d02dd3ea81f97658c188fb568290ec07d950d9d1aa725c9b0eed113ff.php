@@ -103,7 +103,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
                 echo "</td>
                                     <td>";
                 // line 24
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getDOB", [], "any", false, false, false, 24), "html", null, true);
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["employee"], "getDOB", [], "any", false, false, false, 24), "d/m/y"), "html", null, true);
                 echo "</td>
                                     <td>";
                 // line 25
@@ -184,7 +184,7 @@ class __TwigTemplate_b5e786c561ba4355682bc286b30cbeae1cfe75bd8e30553aaaf7b99931a
                                 <tr class=\"tbody-row\">
                                     <td>{{ employee.getFirstName }}</td>
                                     <td>{{ employee.getLastName }}</td>
-                                    <td>{{ employee.getDOB }}</td>
+                                    <td>{{ employee.getDOB | date('d/m/y') }}</td>
                                     <td>{{ employee.getEmailAddress }}</td>
                                 </tr>
                             {% endfor %}

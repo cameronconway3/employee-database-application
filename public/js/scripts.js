@@ -99,7 +99,7 @@ if(form) {
                 dobValid = false;
             }
         }
-    
+        
         // Validate email address field
         emailAddressError.innerHTML = "";
         emailAddressInput.style.border = "1px solid #7FDAE6";
@@ -117,11 +117,16 @@ if(form) {
                 emailAddressValid = false;
             }
         }
-    
+        
         if(firstNameValid === true && lastNameValid === true && dobValid === true && emailAddressValid === true) {
             // Form Submits
         } else {
             e.preventDefault();
         }
     })
+
+    // Manage symfony validation
+    if(dobInput.classList.contains('is-invalid')) {
+        dobError.innerHTML = "<p class='validation-message'>Invalid date</p>";
+    }
 }

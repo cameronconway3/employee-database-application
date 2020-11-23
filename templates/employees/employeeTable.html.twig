@@ -21,7 +21,7 @@
                                 <tr class="tbody-row">
                                     <td>{{ employee.getFirstName }}</td>
                                     <td>{{ employee.getLastName }}</td>
-                                    <td>{{ employee.getDOB }}</td>
+                                    <td>{{ employee.getDOB | date('d/m/y') }}</td>
                                     <td>{{ employee.getEmailAddress }}</td>
                                 </tr>
                             {% endfor %}

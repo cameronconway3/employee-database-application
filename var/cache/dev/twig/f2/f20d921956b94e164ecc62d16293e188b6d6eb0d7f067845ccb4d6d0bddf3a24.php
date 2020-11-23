@@ -79,21 +79,6 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 18
         echo "        ";
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "flashes", [0 => "fail"], "method", false, false, false, 18));
-        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 19
-            echo "            <div class=\"alert alert-danger text-center\">
-                ";
-            // line 20
-            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
-            echo "
-            </div>
-        ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
         // line 23
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
@@ -177,7 +162,7 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
 
     public function getDebugInfo()
     {
-        return array (  157 => 28,  145 => 23,  137 => 8,  130 => 7,  117 => 5,  109 => 29,  107 => 28,  101 => 24,  98 => 23,  89 => 20,  86 => 19,  81 => 18,  72 => 15,  69 => 14,  65 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
+        return array (  142 => 28,  130 => 23,  122 => 8,  115 => 7,  102 => 5,  94 => 29,  92 => 28,  86 => 24,  83 => 23,  81 => 18,  72 => 15,  69 => 14,  65 => 13,  61 => 12,  57 => 10,  55 => 7,  50 => 5,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -199,11 +184,11 @@ class __TwigTemplate_598d733d0d6675b6c71c8bee8e202443a7515bffc169ceeee169b2e5d57
                 {{ message }}
             </div>
         {% endfor %}
-        {% for message in app.flashes('fail') %}
+        {# {% for message in app.flashes('fail') %}
             <div class=\"alert alert-danger text-center\">
                 {{ message }}
             </div>
-        {% endfor %}
+        {% endfor %} #}
         {% block body %}{% endblock %}
         <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>

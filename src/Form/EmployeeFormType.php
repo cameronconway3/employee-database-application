@@ -9,7 +9,6 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class EmployeeFormType extends AbstractType
 {
@@ -28,12 +27,15 @@ class EmployeeFormType extends AbstractType
                 ),
                 'required' => false
             ))
-            ->add('dob', TextType::class, array(
+            ->add('dob', DateType::class, array(
                 'attr' => array(
                     'class' => 'form-styles',
-                    'placeholder' => 'DD/MM/YY'
+                    'placeholder' => 'DD/MM/YY',
                 ),
-                'required' => false
+                'required' => false,
+                'widget' => 'single_text',
+                'format' => 'd/M/y',
+                'html5' => false,
             ))
             ->add('email_address', TextType::class, array(
                 'attr' => array(

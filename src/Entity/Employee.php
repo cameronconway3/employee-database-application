@@ -32,7 +32,7 @@ class Employee
     private $last_name;
 
     /**
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="date")
      */
     private $dob;
 
